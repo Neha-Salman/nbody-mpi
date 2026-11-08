@@ -1,0 +1,8 @@
+# Compiled programs
+nbody_seq
+nbody_mpi
+*.o
+
+# Editor and OS files
+*~
+.vscode/
