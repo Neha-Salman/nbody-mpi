@@ -6,3 +6,4 @@ nbody_mpi
 # Editor and OS files
 *~
 .vscode/
+results/*.csv
