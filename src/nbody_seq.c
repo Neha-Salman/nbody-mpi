@@ -1,11 +1,14 @@
 /*
  * nbody_seq.c - Sequential direct O(N^2) N-body simulation (baseline).
  *
- * Usage: ./nbody_seq N STEPS DT [output.csv]
- *   N          number of bodies
- *   STEPS      number of time steps
- *   DT         size of each time step
- *   output.csv optional file that receives the final state of every body
+ * Usage: ./nbody_seq N STEPS DT [output.csv [trajectory.csv]]
+ *   N              number of bodies
+ *   STEPS          number of time steps
+ *   DT             size of each time step
+ *   output.csv     optional file that receives the final state of every body
+ *   trajectory.csv optional file that receives the position of every body at
+ *                  every step (used for the trajectory plot). Positions are
+ *                  stored during the run and written after timing stops.
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -69,7 +72,7 @@ static void compute_accelerations(const Body *b, int n,
 
 int main(int argc, char *argv[]) {
     if (argc < 4) {
-        fprintf(stderr, "Usage: %s N STEPS DT [output.csv]\n", argv[0]);
+        fprintf(stderr, "Usage: %s N STEPS DT [output.csv [trajectory.csv]]\n", argv[0]);
         return 1;
     }
 
@@ -86,13 +89,27 @@ int main(int argc, char *argv[]) {
     double *ax = malloc((size_t)n * sizeof(double));
     double *ay = malloc((size_t)n * sizeof(double));
     double *az = malloc((size_t)n * sizeof(double));
-    if (!bodies || !ax || !ay || !az) {
+    double *traj = NULL;
+    int record = (argc >= 6);
+
+    if (record) {
+        traj = malloc((size_t)(steps + 1) * 3 * (size_t)n * sizeof(double));
+    }
+    if (!bodies || !ax || !ay || !az || (record && !traj)) {
         fprintf(stderr, "Error: memory allocation failed\n");
-        free(bodies); free(ax); free(ay); free(az);
+        free(bodies); free(ax); free(ay); free(az); free(traj);
         return 1;
     }
 
     init_bodies(bodies, n);
+
+    if (record) {   /* frame 0: initial positions */
+        for (int i = 0; i < n; i++) {
+            traj[3 * i + 0] = bodies[i].x;
+            traj[3 * i + 1] = bodies[i].y;
+            traj[3 * i + 2] = bodies[i].z;
+        }
+    }
 
     /* Time only the simulation loop */
     struct timespec t0, t1;
@@ -108,6 +125,14 @@ int main(int argc, char *argv[]) {
             bodies[i].y  += bodies[i].vy * dt;
             bodies[i].z  += bodies[i].vz * dt;
         }
+        if (record) {   /* store frame s+1 (cheap copy, done only when recording) */
+            double *frame = traj + (size_t)(s + 1) * 3 * (size_t)n;
+            for (int i = 0; i < n; i++) {
+                frame[3 * i + 0] = bodies[i].x;
+                frame[3 * i + 1] = bodies[i].y;
+                frame[3 * i + 2] = bodies[i].z;
+            }
+        }
     }
 
     clock_gettime(CLOCK_MONOTONIC, &t1);
@@ -119,7 +144,7 @@ int main(int argc, char *argv[]) {
         FILE *fp = fopen(argv[4], "w");
         if (!fp) {
             perror(argv[4]);
-            free(bodies); free(ax); free(ay); free(az);
+            free(bodies); free(ax); free(ay); free(az); free(traj);
             return 1;
         }
         fprintf(fp, "id,x,y,z,vx,vy,vz,m\n");
@@ -132,6 +157,26 @@ int main(int argc, char *argv[]) {
         printf("Final state written to %s\n", argv[4]);
     }
 
-    free(bodies); free(ax); free(ay); free(az);
+    /* Optionally save the trajectory: one row per body per frame */
+    if (record) {
+        FILE *tp = fopen(argv[5], "w");
+        if (!tp) {
+            perror(argv[5]);
+            free(bodies); free(ax); free(ay); free(az); free(traj);
+            return 1;
+        }
+        fprintf(tp, "step,id,x,y,z\n");
+        for (int s = 0; s <= steps; s++) {
+            const double *frame = traj + (size_t)s * 3 * (size_t)n;
+            for (int i = 0; i < n; i++) {
+                fprintf(tp, "%d,%d,%.17g,%.17g,%.17g\n",
+                        s, i, frame[3 * i + 0], frame[3 * i + 1], frame[3 * i + 2]);
+            }
+        }
+        fclose(tp);
+        printf("Trajectory written to %s\n", argv[5]);
+    }
+
+    free(bodies); free(ax); free(ay); free(az); free(traj);
     return 0;
 }
