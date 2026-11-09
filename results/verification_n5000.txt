@@ -1,0 +1,4 @@
+N=5000 P=1 max abs difference = 0.000e+00
+N=5000 P=2 max abs difference = 0.000e+00
+N=5000 P=4 max abs difference = 0.000e+00
+N=5000 P=8 max abs difference = 0.000e+00
