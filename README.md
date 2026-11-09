@@ -11,47 +11,47 @@ The project measures computation time, communication time, total time, speedup, 
 
 Tested on Ubuntu 26.04 LTS running in VMware Workstation, with 4 virtual CPUs.
 
-~~~bash
+```~~bash
 sudo apt update
 sudo apt install -y build-essential openmpi-bin libopenmpi-dev git python3-matplotlib
-~
+```
 
 ## Project structure
 
-~
+```
 src/        C source code (sequential and MPI)
 scripts/    Scripts to build, run experiments, analyse results, and plot
 results/    Experiment log, summary table, and verification outputs
 figures/    Performance graphs (PNG)
 docs/       Report and presentation
-~
+```
 
 ## Build
 
-~~~bash
+```~~bash
 gcc -O2 -Wall -Wextra -o nbody_seq src/nbody_seq.c -lm
 mpicc -O2 -Wall -Wextra -o nbody_mpi src/nbody_mpi.c -lm
-~
+```
 
 ## Running
 
 Sequential run:
 
-~~~bash
+```~~bash
 ./nbody_seq N STEPS DT [output.csv]
-~
+```
 
 MPI run with P processes:
 
-~~~bash
+```~~bash
 mpirun -np P ./nbody_mpi N STEPS DT [output.csv]
-~
+```
 
 Example: 100 bodies, 100 steps, time step 0.01, on 4 processes:
 
-~~~bash
+```~~bash
 mpirun -np 4 ./nbody_mpi 100 100 0.01 results/mpi_p4_n100.csv
-~
+```
 
 ## Parameters
 
@@ -69,41 +69,41 @@ Fixed constants in the code: gravitational constant G = 1.0, softening 1e-3, and
 
 Run the full experiment (75 measured runs, about 15 minutes):
 
-~~~bash
+```~~bash
 ./scripts/run_experiments.sh
-~
+```
 
 This writes every run to results/experiments.log.
 
 Summarise the results (median of 3 repeats, speedup, efficiency):
 
-~~~bash
+```~~bash
 ./scripts/analyze.sh
-~
+```
 
 Output goes to results/summary.txt.
 
 Create the performance graphs:
 
-~~~bash
+```~~bash
 python3 scripts/plot_results.py
-~
+```
 
 Output goes to figures/.
 
 Run the sequential baseline alone:
 
-~~~bash
+```~~bash
 ./scripts/run_sequential.sh
-~
+```
 
 ## Verification
 
 The MPI results were compared with the sequential results for N = 100 after 100 steps. The maximum absolute difference was 0 for both 1 and 4 processes, within the stated tolerance of 1e-10.
 
-~~~bash
+```~~bash
 paste -d, results/seq_n100.csv results/mpi_p4_n100.csv | awk -F, 'NR>1 {for (k=2; k<=7; k++) {d=$k-$(k+8); if (d<0) d=-d; if (d>m) m=d}} END {printf "max abs difference = %.3e\n", m}'
-~
+```
 
 ## Notes on the measurements
 
