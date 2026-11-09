@@ -1,0 +1,5 @@
+Initial total energy: -0.455823
+        dt    steps   final energy   relative drift
+      0.01      100       0.496501        2.089e+00
+     0.001     1000      -0.199790        5.617e-01
+    0.0001    10000      -0.455272        1.210e-03

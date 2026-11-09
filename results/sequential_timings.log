@@ -1,10 +1,10 @@
-N=100 steps=100 dt=0.01 time=0.010093 s
+N=100 steps=100 dt=0.0001 time=0.012836 s
 Final state written to results/seq_n100.csv
-N=500 steps=100 dt=0.01 time=0.228590 s
+N=500 steps=100 dt=0.0001 time=0.241843 s
 Final state written to results/seq_n500.csv
-N=1000 steps=100 dt=0.01 time=0.572955 s
+N=1000 steps=100 dt=0.0001 time=0.619514 s
 Final state written to results/seq_n1000.csv
-N=5000 steps=100 dt=0.01 time=12.215842 s
+N=5000 steps=100 dt=0.0001 time=18.027070 s
 Final state written to results/seq_n5000.csv
-N=10000 steps=100 dt=0.01 time=47.779374 s
+N=10000 steps=100 dt=0.0001 time=73.208466 s
 Final state written to results/seq_n10000.csv

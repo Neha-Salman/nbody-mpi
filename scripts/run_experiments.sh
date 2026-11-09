@@ -8,7 +8,7 @@ set -e
 cd "$(dirname "$0")/.."
 
 STEPS=100
-DT=0.01
+DT=0.0001
 REPEATS=3
 LOG=results/experiments.log
 

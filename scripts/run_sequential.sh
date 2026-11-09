@@ -7,7 +7,7 @@ set -e
 cd "$(dirname "$0")/.."
 
 STEPS=100
-DT=0.01
+DT=0.0001
 LOG=results/sequential_timings.log
 
 gcc -O2 -Wall -Wextra -o nbody_seq src/nbody_seq.c -lm
