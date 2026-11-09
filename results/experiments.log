@@ -1,75 +1,75 @@
-SEQ N=100 rep=1 N=100 steps=100 dt=0.01 time=0.010556 s
-SEQ N=100 rep=2 N=100 steps=100 dt=0.01 time=0.017386 s
-SEQ N=100 rep=3 N=100 steps=100 dt=0.01 time=0.014689 s
-MPI P=1 N=100 rep=1 P=1 N=100 steps=100 dt=0.01 total=0.008226 s comp_max=0.008207 s comp_min=0.008207 s comm_max=0.000014 s
-MPI P=1 N=100 rep=2 P=1 N=100 steps=100 dt=0.01 total=0.008092 s comp_max=0.008070 s comp_min=0.008070 s comm_max=0.000017 s
-MPI P=1 N=100 rep=3 P=1 N=100 steps=100 dt=0.01 total=0.007386 s comp_max=0.007367 s comp_min=0.007367 s comm_max=0.000014 s
-MPI P=2 N=100 rep=1 P=2 N=100 steps=100 dt=0.01 total=0.003974 s comp_max=0.003283 s comp_min=0.003222 s comm_max=0.000724 s
-MPI P=2 N=100 rep=2 P=2 N=100 steps=100 dt=0.01 total=0.005700 s comp_max=0.004631 s comp_min=0.004428 s comm_max=0.001264 s
-MPI P=2 N=100 rep=3 P=2 N=100 steps=100 dt=0.01 total=0.004571 s comp_max=0.004310 s comp_min=0.003712 s comm_max=0.000851 s
-MPI P=4 N=100 rep=1 P=4 N=100 steps=100 dt=0.01 total=0.002825 s comp_max=0.002432 s comp_min=0.002190 s comm_max=0.000625 s
-MPI P=4 N=100 rep=2 P=4 N=100 steps=100 dt=0.01 total=0.003062 s comp_max=0.002675 s comp_min=0.002116 s comm_max=0.000939 s
-MPI P=4 N=100 rep=3 P=4 N=100 steps=100 dt=0.01 total=0.002807 s comp_max=0.002242 s comp_min=0.002057 s comm_max=0.000737 s
-MPI P=8 N=100 rep=1 P=8 N=100 steps=100 dt=0.01 total=0.026490 s comp_max=0.002898 s comp_min=0.001180 s comm_max=0.024851 s
-MPI P=8 N=100 rep=2 P=8 N=100 steps=100 dt=0.01 total=0.006359 s comp_max=0.001554 s comp_min=0.001105 s comm_max=0.005129 s
-MPI P=8 N=100 rep=3 P=8 N=100 steps=100 dt=0.01 total=0.057487 s comp_max=0.002948 s comp_min=0.001130 s comm_max=0.055736 s
-SEQ N=500 rep=1 N=500 steps=100 dt=0.01 time=0.173766 s
-SEQ N=500 rep=2 N=500 steps=100 dt=0.01 time=0.171640 s
-SEQ N=500 rep=3 N=500 steps=100 dt=0.01 time=0.154998 s
-MPI P=1 N=500 rep=1 P=1 N=500 steps=100 dt=0.01 total=0.197206 s comp_max=0.197135 s comp_min=0.197135 s comm_max=0.000063 s
-MPI P=1 N=500 rep=2 P=1 N=500 steps=100 dt=0.01 total=0.203579 s comp_max=0.203497 s comp_min=0.203497 s comm_max=0.000073 s
-MPI P=1 N=500 rep=3 P=1 N=500 steps=100 dt=0.01 total=0.159659 s comp_max=0.159601 s comp_min=0.159601 s comm_max=0.000052 s
-MPI P=2 N=500 rep=1 P=2 N=500 steps=100 dt=0.01 total=0.101374 s comp_max=0.096261 s comp_min=0.093470 s comm_max=0.007896 s
-MPI P=2 N=500 rep=2 P=2 N=500 steps=100 dt=0.01 total=0.096407 s comp_max=0.092520 s comp_min=0.088988 s comm_max=0.007401 s
-MPI P=2 N=500 rep=3 P=2 N=500 steps=100 dt=0.01 total=0.099669 s comp_max=0.095891 s comp_min=0.092673 s comm_max=0.006988 s
-MPI P=4 N=500 rep=1 P=4 N=500 steps=100 dt=0.01 total=0.081971 s comp_max=0.069640 s comp_min=0.062297 s comm_max=0.019662 s
-MPI P=4 N=500 rep=2 P=4 N=500 steps=100 dt=0.01 total=0.090337 s comp_max=0.078053 s comp_min=0.062198 s comm_max=0.027887 s
-MPI P=4 N=500 rep=3 P=4 N=500 steps=100 dt=0.01 total=0.085299 s comp_max=0.069507 s comp_min=0.064392 s comm_max=0.019250 s
-MPI P=8 N=500 rep=1 P=8 N=500 steps=100 dt=0.01 total=0.111622 s comp_max=0.037656 s comp_min=0.030607 s comm_max=0.080415 s
-MPI P=8 N=500 rep=2 P=8 N=500 steps=100 dt=0.01 total=0.164433 s comp_max=0.048840 s comp_min=0.035215 s comm_max=0.128656 s
-MPI P=8 N=500 rep=3 P=8 N=500 steps=100 dt=0.01 total=0.152575 s comp_max=0.042592 s comp_min=0.034026 s comm_max=0.117727 s
-SEQ N=1000 rep=1 N=1000 steps=100 dt=0.01 time=0.696553 s
-SEQ N=1000 rep=2 N=1000 steps=100 dt=0.01 time=0.633288 s
-SEQ N=1000 rep=3 N=1000 steps=100 dt=0.01 time=0.622260 s
-MPI P=1 N=1000 rep=1 P=1 N=1000 steps=100 dt=0.01 total=0.681785 s comp_max=0.681579 s comp_min=0.681579 s comm_max=0.000194 s
-MPI P=1 N=1000 rep=2 P=1 N=1000 steps=100 dt=0.01 total=0.625084 s comp_max=0.624986 s comp_min=0.624986 s comm_max=0.000087 s
-MPI P=1 N=1000 rep=3 P=1 N=1000 steps=100 dt=0.01 total=0.538269 s comp_max=0.538007 s comp_min=0.538007 s comm_max=0.000251 s
-MPI P=2 N=1000 rep=1 P=2 N=1000 steps=100 dt=0.01 total=0.353437 s comp_max=0.341269 s comp_min=0.340625 s comm_max=0.012802 s
-MPI P=2 N=1000 rep=2 P=2 N=1000 steps=100 dt=0.01 total=0.350939 s comp_max=0.342240 s comp_min=0.329689 s comm_max=0.021238 s
-MPI P=2 N=1000 rep=3 P=2 N=1000 steps=100 dt=0.01 total=0.351351 s comp_max=0.340975 s comp_min=0.338386 s comm_max=0.012955 s
-MPI P=4 N=1000 rep=1 P=4 N=1000 steps=100 dt=0.01 total=0.373585 s comp_max=0.299203 s comp_min=0.270467 s comm_max=0.103104 s
-MPI P=4 N=1000 rep=2 P=4 N=1000 steps=100 dt=0.01 total=0.369115 s comp_max=0.285294 s comp_min=0.260791 s comm_max=0.108010 s
-MPI P=4 N=1000 rep=3 P=4 N=1000 steps=100 dt=0.01 total=0.327519 s comp_max=0.270268 s comp_min=0.256242 s comm_max=0.071161 s
-MPI P=8 N=1000 rep=1 P=8 N=1000 steps=100 dt=0.01 total=0.509355 s comp_max=0.157813 s comp_min=0.139086 s comm_max=0.367395 s
-MPI P=8 N=1000 rep=2 P=8 N=1000 steps=100 dt=0.01 total=0.382818 s comp_max=0.152516 s comp_min=0.139118 s comm_max=0.243219 s
-MPI P=8 N=1000 rep=3 P=8 N=1000 steps=100 dt=0.01 total=0.371350 s comp_max=0.158460 s comp_min=0.129843 s comm_max=0.240223 s
-SEQ N=5000 rep=1 N=5000 steps=100 dt=0.01 time=17.068907 s
-SEQ N=5000 rep=2 N=5000 steps=100 dt=0.01 time=20.213767 s
-SEQ N=5000 rep=3 N=5000 steps=100 dt=0.01 time=17.064661 s
-MPI P=1 N=5000 rep=1 P=1 N=5000 steps=100 dt=0.01 total=14.790557 s comp_max=14.790393 s comp_min=14.790393 s comm_max=0.000150 s
-MPI P=1 N=5000 rep=2 P=1 N=5000 steps=100 dt=0.01 total=14.185499 s comp_max=14.185344 s comp_min=14.185344 s comm_max=0.000142 s
-MPI P=1 N=5000 rep=3 P=1 N=5000 steps=100 dt=0.01 total=14.950968 s comp_max=14.950795 s comp_min=14.950795 s comm_max=0.000160 s
-MPI P=2 N=5000 rep=1 P=2 N=5000 steps=100 dt=0.01 total=9.451702 s comp_max=9.363953 s comp_min=9.340743 s comm_max=0.110943 s
-MPI P=2 N=5000 rep=2 P=2 N=5000 steps=100 dt=0.01 total=9.171214 s comp_max=9.131189 s comp_min=9.008018 s comm_max=0.163175 s
-MPI P=2 N=5000 rep=3 P=2 N=5000 steps=100 dt=0.01 total=9.676018 s comp_max=9.563594 s comp_min=9.471401 s comm_max=0.204591 s
-MPI P=4 N=5000 rep=1 P=4 N=5000 steps=100 dt=0.01 total=7.475394 s comp_max=6.982133 s comp_min=6.771379 s comm_max=0.703991 s
-MPI P=4 N=5000 rep=2 P=4 N=5000 steps=100 dt=0.01 total=8.303893 s comp_max=7.500263 s comp_min=7.200677 s comm_max=1.103181 s
-MPI P=4 N=5000 rep=3 P=4 N=5000 steps=100 dt=0.01 total=7.730077 s comp_max=7.181081 s comp_min=6.923947 s comm_max=0.806102 s
-MPI P=8 N=5000 rep=1 P=8 N=5000 steps=100 dt=0.01 total=8.470615 s comp_max=7.083533 s comp_min=6.423385 s comm_max=2.047156 s
-MPI P=8 N=5000 rep=2 P=8 N=5000 steps=100 dt=0.01 total=8.315795 s comp_max=7.068333 s comp_min=6.591904 s comm_max=1.712064 s
-MPI P=8 N=5000 rep=3 P=8 N=5000 steps=100 dt=0.01 total=8.540327 s comp_max=7.033607 s comp_min=6.643102 s comm_max=1.895417 s
-SEQ N=10000 rep=1 N=10000 steps=100 dt=0.01 time=59.155801 s
-SEQ N=10000 rep=2 N=10000 steps=100 dt=0.01 time=59.292542 s
-SEQ N=10000 rep=3 N=10000 steps=100 dt=0.01 time=67.393047 s
-MPI P=1 N=10000 rep=1 P=1 N=10000 steps=100 dt=0.01 total=55.778075 s comp_max=55.777885 s comp_min=55.777885 s comm_max=0.000176 s
-MPI P=1 N=10000 rep=2 P=1 N=10000 steps=100 dt=0.01 total=58.979787 s comp_max=58.979588 s comp_min=58.979588 s comm_max=0.000184 s
-MPI P=1 N=10000 rep=3 P=1 N=10000 steps=100 dt=0.01 total=61.261815 s comp_max=61.261628 s comp_min=61.261628 s comm_max=0.000174 s
-MPI P=2 N=10000 rep=1 P=2 N=10000 steps=100 dt=0.01 total=38.965026 s comp_max=38.849276 s comp_min=38.131769 s comm_max=0.830611 s
-MPI P=2 N=10000 rep=2 P=2 N=10000 steps=100 dt=0.01 total=39.353454 s comp_max=39.176378 s comp_min=38.687427 s comm_max=0.666004 s
-MPI P=2 N=10000 rep=3 P=2 N=10000 steps=100 dt=0.01 total=42.115177 s comp_max=41.784361 s comp_min=41.451440 s comm_max=0.663716 s
-MPI P=4 N=10000 rep=1 P=4 N=10000 steps=100 dt=0.01 total=30.007303 s comp_max=28.894830 s comp_min=28.201577 s comm_max=1.805685 s
-MPI P=4 N=10000 rep=2 P=4 N=10000 steps=100 dt=0.01 total=29.793888 s comp_max=28.543465 s comp_min=27.891166 s comm_max=1.902691 s
-MPI P=4 N=10000 rep=3 P=4 N=10000 steps=100 dt=0.01 total=29.725216 s comp_max=28.479173 s comp_min=27.613159 s comm_max=2.112007 s
-MPI P=8 N=10000 rep=1 P=8 N=10000 steps=100 dt=0.01 total=33.041808 s comp_max=29.478041 s comp_min=28.266843 s comm_max=4.749883 s
-MPI P=8 N=10000 rep=2 P=8 N=10000 steps=100 dt=0.01 total=30.873042 s comp_max=28.302273 s comp_min=27.403346 s comm_max=3.467254 s
-MPI P=8 N=10000 rep=3 P=8 N=10000 steps=100 dt=0.01 total=31.496023 s comp_max=28.794249 s comp_min=27.820970 s comm_max=3.671271 s
+SEQ N=100 rep=1 N=100 steps=100 dt=0.01 time=0.004814 s
+SEQ N=100 rep=2 N=100 steps=100 dt=0.01 time=0.004906 s
+SEQ N=100 rep=3 N=100 steps=100 dt=0.01 time=0.007525 s
+MPI P=1 N=100 rep=1 P=1 N=100 steps=100 dt=0.01 total=0.004134 s comp_max=0.004126 s comp_min=0.004126 s comm_max=0.000005 s
+MPI P=1 N=100 rep=2 P=1 N=100 steps=100 dt=0.01 total=0.004201 s comp_max=0.004193 s comp_min=0.004193 s comm_max=0.000004 s
+MPI P=1 N=100 rep=3 P=1 N=100 steps=100 dt=0.01 total=0.004139 s comp_max=0.004130 s comp_min=0.004130 s comm_max=0.000006 s
+MPI P=2 N=100 rep=1 P=2 N=100 steps=100 dt=0.01 total=0.002178 s comp_max=0.002046 s comp_min=0.001951 s comm_max=0.000223 s
+MPI P=2 N=100 rep=2 P=2 N=100 steps=100 dt=0.01 total=0.003339 s comp_max=0.003216 s comp_min=0.003112 s comm_max=0.000223 s
+MPI P=2 N=100 rep=3 P=2 N=100 steps=100 dt=0.01 total=0.002278 s comp_max=0.002156 s comp_min=0.001909 s comm_max=0.000365 s
+MPI P=4 N=100 rep=1 P=4 N=100 steps=100 dt=0.01 total=0.002386 s comp_max=0.002036 s comp_min=0.001756 s comm_max=0.000622 s
+MPI P=4 N=100 rep=2 P=4 N=100 steps=100 dt=0.01 total=0.002355 s comp_max=0.002056 s comp_min=0.001744 s comm_max=0.000599 s
+MPI P=4 N=100 rep=3 P=4 N=100 steps=100 dt=0.01 total=0.002372 s comp_max=0.001904 s comp_min=0.001740 s comm_max=0.000624 s
+MPI P=8 N=100 rep=1 P=8 N=100 steps=100 dt=0.01 total=0.009378 s comp_max=0.001122 s comp_min=0.000834 s comm_max=0.008360 s
+MPI P=8 N=100 rep=2 P=8 N=100 steps=100 dt=0.01 total=0.010003 s comp_max=0.001301 s comp_min=0.000830 s comm_max=0.008603 s
+MPI P=8 N=100 rep=3 P=8 N=100 steps=100 dt=0.01 total=0.057460 s comp_max=0.006481 s comp_min=0.000851 s comm_max=0.056408 s
+SEQ N=500 rep=1 N=500 steps=100 dt=0.01 time=0.119034 s
+SEQ N=500 rep=2 N=500 steps=100 dt=0.01 time=0.112280 s
+SEQ N=500 rep=3 N=500 steps=100 dt=0.01 time=0.113921 s
+MPI P=1 N=500 rep=1 P=1 N=500 steps=100 dt=0.01 total=0.104488 s comp_max=0.104440 s comp_min=0.104440 s comm_max=0.000043 s
+MPI P=1 N=500 rep=2 P=1 N=500 steps=100 dt=0.01 total=0.099838 s comp_max=0.099802 s comp_min=0.099802 s comm_max=0.000031 s
+MPI P=1 N=500 rep=3 P=1 N=500 steps=100 dt=0.01 total=0.100463 s comp_max=0.100410 s comp_min=0.100410 s comm_max=0.000049 s
+MPI P=2 N=500 rep=1 P=2 N=500 steps=100 dt=0.01 total=0.056409 s comp_max=0.055014 s comp_min=0.054629 s comm_max=0.001773 s
+MPI P=2 N=500 rep=2 P=2 N=500 steps=100 dt=0.01 total=0.083393 s comp_max=0.080087 s comp_min=0.078601 s comm_max=0.004784 s
+MPI P=2 N=500 rep=3 P=2 N=500 steps=100 dt=0.01 total=0.081246 s comp_max=0.079763 s comp_min=0.079118 s comm_max=0.002121 s
+MPI P=4 N=500 rep=1 P=4 N=500 steps=100 dt=0.01 total=0.054845 s comp_max=0.052170 s comp_min=0.048051 s comm_max=0.006785 s
+MPI P=4 N=500 rep=2 P=4 N=500 steps=100 dt=0.01 total=0.052636 s comp_max=0.049471 s comp_min=0.047855 s comm_max=0.004769 s
+MPI P=4 N=500 rep=3 P=4 N=500 steps=100 dt=0.01 total=0.064895 s comp_max=0.059884 s comp_min=0.049928 s comm_max=0.014952 s
+MPI P=8 N=500 rep=1 P=8 N=500 steps=100 dt=0.01 total=0.113850 s comp_max=0.032353 s comp_min=0.024080 s comm_max=0.089397 s
+MPI P=8 N=500 rep=2 P=8 N=500 steps=100 dt=0.01 total=0.097741 s comp_max=0.027200 s comp_min=0.024578 s comm_max=0.072879 s
+MPI P=8 N=500 rep=3 P=8 N=500 steps=100 dt=0.01 total=0.095809 s comp_max=0.028712 s comp_min=0.024258 s comm_max=0.071497 s
+SEQ N=1000 rep=1 N=1000 steps=100 dt=0.01 time=0.441389 s
+SEQ N=1000 rep=2 N=1000 steps=100 dt=0.01 time=0.446792 s
+SEQ N=1000 rep=3 N=1000 steps=100 dt=0.01 time=0.443899 s
+MPI P=1 N=1000 rep=1 P=1 N=1000 steps=100 dt=0.01 total=0.410772 s comp_max=0.410715 s comp_min=0.410715 s comm_max=0.000052 s
+MPI P=1 N=1000 rep=2 P=1 N=1000 steps=100 dt=0.01 total=0.411395 s comp_max=0.411341 s comp_min=0.411341 s comm_max=0.000049 s
+MPI P=1 N=1000 rep=3 P=1 N=1000 steps=100 dt=0.01 total=0.459685 s comp_max=0.459582 s comp_min=0.459582 s comm_max=0.000095 s
+MPI P=2 N=1000 rep=1 P=2 N=1000 steps=100 dt=0.01 total=0.228487 s comp_max=0.224447 s comp_min=0.222979 s comm_max=0.005497 s
+MPI P=2 N=1000 rep=2 P=2 N=1000 steps=100 dt=0.01 total=0.258538 s comp_max=0.255700 s comp_min=0.248414 s comm_max=0.010116 s
+MPI P=2 N=1000 rep=3 P=2 N=1000 steps=100 dt=0.01 total=0.239414 s comp_max=0.234952 s comp_min=0.233797 s comm_max=0.005610 s
+MPI P=4 N=1000 rep=1 P=4 N=1000 steps=100 dt=0.01 total=0.217671 s comp_max=0.201208 s comp_min=0.194910 s comm_max=0.022750 s
+MPI P=4 N=1000 rep=2 P=4 N=1000 steps=100 dt=0.01 total=0.210323 s comp_max=0.197782 s comp_min=0.194326 s comm_max=0.015983 s
+MPI P=4 N=1000 rep=3 P=4 N=1000 steps=100 dt=0.01 total=0.232106 s comp_max=0.207771 s comp_min=0.194618 s comm_max=0.037474 s
+MPI P=8 N=1000 rep=1 P=8 N=1000 steps=100 dt=0.01 total=0.325374 s comp_max=0.109610 s comp_min=0.098241 s comm_max=0.226034 s
+MPI P=8 N=1000 rep=2 P=8 N=1000 steps=100 dt=0.01 total=0.241347 s comp_max=0.104097 s comp_min=0.097919 s comm_max=0.142819 s
+MPI P=8 N=1000 rep=3 P=8 N=1000 steps=100 dt=0.01 total=0.252559 s comp_max=0.103481 s comp_min=0.097828 s comm_max=0.154232 s
+SEQ N=5000 rep=1 N=5000 steps=100 dt=0.01 time=11.261110 s
+SEQ N=5000 rep=2 N=5000 steps=100 dt=0.01 time=11.671928 s
+SEQ N=5000 rep=3 N=5000 steps=100 dt=0.01 time=11.710091 s
+MPI P=1 N=5000 rep=1 P=1 N=5000 steps=100 dt=0.01 total=11.029168 s comp_max=11.029022 s comp_min=11.029022 s comm_max=0.000131 s
+MPI P=1 N=5000 rep=2 P=1 N=5000 steps=100 dt=0.01 total=10.749177 s comp_max=10.749010 s comp_min=10.749010 s comm_max=0.000155 s
+MPI P=1 N=5000 rep=3 P=1 N=5000 steps=100 dt=0.01 total=10.715176 s comp_max=10.715030 s comp_min=10.715030 s comm_max=0.000133 s
+MPI P=2 N=5000 rep=1 P=2 N=5000 steps=100 dt=0.01 total=7.013337 s comp_max=6.917468 s comp_min=6.890357 s comm_max=0.122923 s
+MPI P=2 N=5000 rep=2 P=2 N=5000 steps=100 dt=0.01 total=7.434583 s comp_max=7.389467 s comp_min=7.359340 s comm_max=0.075220 s
+MPI P=2 N=5000 rep=3 P=2 N=5000 steps=100 dt=0.01 total=7.507843 s comp_max=7.459466 s comp_min=7.414541 s comm_max=0.093271 s
+MPI P=4 N=5000 rep=1 P=4 N=5000 steps=100 dt=0.01 total=6.336433 s comp_max=6.119589 s comp_min=5.973218 s comm_max=0.363185 s
+MPI P=4 N=5000 rep=2 P=4 N=5000 steps=100 dt=0.01 total=6.914644 s comp_max=6.476498 s comp_min=6.300484 s comm_max=0.614133 s
+MPI P=4 N=5000 rep=3 P=4 N=5000 steps=100 dt=0.01 total=6.383661 s comp_max=6.187040 s comp_min=6.068859 s comm_max=0.314770 s
+MPI P=8 N=5000 rep=1 P=8 N=5000 steps=100 dt=0.01 total=7.691301 s comp_max=6.573130 s comp_min=5.720558 s comm_max=1.969669 s
+MPI P=8 N=5000 rep=2 P=8 N=5000 steps=100 dt=0.01 total=7.185161 s comp_max=6.034167 s comp_min=5.823959 s comm_max=1.360747 s
+MPI P=8 N=5000 rep=3 P=8 N=5000 steps=100 dt=0.01 total=7.154967 s comp_max=6.243244 s comp_min=5.555711 s comm_max=1.599060 s
+SEQ N=10000 rep=1 N=10000 steps=100 dt=0.01 time=44.959024 s
+SEQ N=10000 rep=2 N=10000 steps=100 dt=0.01 time=44.889275 s
+SEQ N=10000 rep=3 N=10000 steps=100 dt=0.01 time=44.917065 s
+MPI P=1 N=10000 rep=1 P=1 N=10000 steps=100 dt=0.01 total=45.524013 s comp_max=45.523705 s comp_min=45.523705 s comm_max=0.000295 s
+MPI P=1 N=10000 rep=2 P=1 N=10000 steps=100 dt=0.01 total=41.839459 s comp_max=41.839302 s comp_min=41.839302 s comm_max=0.000145 s
+MPI P=1 N=10000 rep=3 P=1 N=10000 steps=100 dt=0.01 total=41.199132 s comp_max=41.198981 s comp_min=41.198981 s comm_max=0.000139 s
+MPI P=2 N=10000 rep=1 P=2 N=10000 steps=100 dt=0.01 total=28.213563 s comp_max=28.019987 s comp_min=27.994595 s comm_max=0.218947 s
+MPI P=2 N=10000 rep=2 P=2 N=10000 steps=100 dt=0.01 total=29.458594 s comp_max=29.308961 s comp_min=29.090883 s comm_max=0.367685 s
+MPI P=2 N=10000 rep=3 P=2 N=10000 steps=100 dt=0.01 total=28.530942 s comp_max=28.434410 s comp_min=28.339270 s comm_max=0.191642 s
+MPI P=4 N=10000 rep=1 P=4 N=10000 steps=100 dt=0.01 total=24.444979 s comp_max=24.080066 s comp_min=23.740095 s comm_max=0.704853 s
+MPI P=4 N=10000 rep=2 P=4 N=10000 steps=100 dt=0.01 total=24.565129 s comp_max=24.244707 s comp_min=23.923382 s comm_max=0.641713 s
+MPI P=4 N=10000 rep=3 P=4 N=10000 steps=100 dt=0.01 total=25.774966 s comp_max=25.033883 s comp_min=24.907051 s comm_max=0.867892 s
+MPI P=8 N=10000 rep=1 P=8 N=10000 steps=100 dt=0.01 total=29.878807 s comp_max=27.489116 s comp_min=25.877018 s comm_max=3.999458 s
+MPI P=8 N=10000 rep=2 P=8 N=10000 steps=100 dt=0.01 total=25.675687 s comp_max=24.073801 s comp_min=23.606690 s comm_max=2.064671 s
+MPI P=8 N=10000 rep=3 P=8 N=10000 steps=100 dt=0.01 total=27.437645 s comp_max=24.934722 s comp_min=23.814643 s comm_max=3.597673 s
