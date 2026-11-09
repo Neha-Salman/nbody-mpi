@@ -1,0 +1,8 @@
+N=100 P=1 max abs difference = 0.000e+00
+N=100 P=2 max abs difference = 0.000e+00
+N=100 P=4 max abs difference = 0.000e+00
+N=100 P=8 max abs difference = 0.000e+00
+N=1000 P=1 max abs difference = 0.000e+00
+N=1000 P=2 max abs difference = 0.000e+00
+N=1000 P=4 max abs difference = 0.000e+00
+N=1000 P=8 max abs difference = 0.000e+00
