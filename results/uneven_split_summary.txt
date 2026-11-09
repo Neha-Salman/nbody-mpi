@@ -1,0 +1,6 @@
+P=3 N=10001 comp_max=31.234031 comp_min=30.764276 imbalance_ratio=1.0153
+P=3 N=10001 comp_max=40.240813 comp_min=39.522343 imbalance_ratio=1.0182
+P=3 N=10001 comp_max=56.447088 comp_min=54.357647 imbalance_ratio=1.0384
+P=4 N=10001 comp_max=40.849276 comp_min=40.136634 imbalance_ratio=1.0178
+P=4 N=10001 comp_max=48.176137 comp_min=45.198181 imbalance_ratio=1.0659
+P=4 N=10001 comp_max=45.398714 comp_min=43.282123 imbalance_ratio=1.0489

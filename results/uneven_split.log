@@ -1,0 +1,6 @@
+P=3 N=10001 steps=100 dt=0.01 total=32.210506 s comp_max=31.234031 s comp_min=30.764276 s comm_max=1.446177 s
+P=3 N=10001 steps=100 dt=0.01 total=41.736709 s comp_max=40.240813 s comp_min=39.522343 s comm_max=2.214337 s
+P=3 N=10001 steps=100 dt=0.01 total=58.550707 s comp_max=56.447088 s comp_min=54.357647 s comm_max=4.193031 s
+P=4 N=10001 steps=100 dt=0.01 total=43.838703 s comp_max=40.849276 s comp_min=40.136634 s comm_max=3.611283 s
+P=4 N=10001 steps=100 dt=0.01 total=51.338985 s comp_max=48.176137 s comp_min=45.198181 s comm_max=6.088482 s
+P=4 N=10001 steps=100 dt=0.01 total=48.662161 s comp_max=45.398714 s comp_min=43.282123 s comm_max=5.377452 s
